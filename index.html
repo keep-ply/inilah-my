@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafly's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Langsung di dalam file HTML agar mudah */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: -50px auto 50px;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .about {
+            margin-bottom: 40px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #3498db;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.5rem; }
+            .container { margin-top: 20px; width: 90%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <img src="inikah my.jpg" alt="Rafly Amar Musyafa" class="profile-pic" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px;"> 
+    
+    <h1>Hello, World!</h1>
+    <p>I'm Rafly, a Tech Enthusiast & Designer</p>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Selamat datang di portofolio saya! Saya adalah seorang mahasiswa dari Politeknik Enjiniring Pertanian Indonesia yang tertarik pada bidang Tata Air Pertanian dan pengembangan sistem informasi.</p>
+        </section>
+
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="card">
+                    <h3>Smart Irrigation</h3>
+                    <p>Sistem kontrol air otomatis menggunakan Arduino dan sensor kelembapan.</p>
+                </div>
+                <div class="card">
+                    <h3>Data Analysis</h3>
+                    <p>Analisis ekonomi untuk usaha tani dan efisiensi mekanisasi.</p>
+                </div>
+                <div class="card">
+                    <h3>Web Design</h3>
+                    <p>Pengembangan tampilan web portofolio yang responsif.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Rafly. Created with ❤️ and Code.</p>
+    </footer>
+
+</body>
+</html>
